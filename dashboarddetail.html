@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboarddetail.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="home.html" class="logo">
+        <img src="1.png" alt="Logo">
+      </a> 
+      <!-- <span class="name">Dany Irfansyah</span> -->
+
+      <ul class="menu-links">
+        <h3 class="headings">Mahasiswa</h3>
+        <img src="account-logo-removebg.png" width="40px" alt="">
+  <li><a href="home.html">Dashboard</a></li>
+  <li><a href="home.html">Prestasi</a></li>
+  <!-- <span id="close-menu-btn" class="material-symbols-outlined">close</span> -->
+</ul>
+
+      <!-- <span id="hamburger-btn" class="material-symbols-outlined">menu</span> -->
+    </nav>
+  </header>
+  
+  <div class="container">   
+
+    <!-- <h1 class="heading">Kegiatan Dalam Waktu Dekat</h1> -->
+
+    <div class="box-container">
+        
+        <div class="box">
+          <div class="box-img">
+            <img src="blur.png" alt="">
+            <img class="blur-besar" src="blur besar.png" alt="">
+          </div>
+            <!-- <img src="Himadira.png"alt=""> -->
+            <br>
+        </div>
+        <div class="box-text">
+          <div class="box-text-top">
+            <h3>Workshop Pengembangan Karir</h3>
+          <p>Workshop pengembangan karir adalah acara interaktif yang dirancang untuk membantu peserta meningkatkan keterampilan, pengetahuan, dan wawasan mereka dalam membangun dan mengelola karir mereka. Dalam workshop ini, peserta akan mendapatkan pelatihan praktis, saran ahli, dan kesempatan untuk berlatih dalam berbagai aspek seperti perencanaan karir, komunikasi efektif, dan keterampilan kepemimpinan. Tujuannya adalah untuk membantu individu merencanakan langkah-langkah yang diperlukan untuk mencapai tujuan karir mereka dengan lebih baik.</p>
+          </div>
+          <div class="box-text-bottom">
+            <div class="penyelenggara">
+              <h3>Penyelenggara</h3>
+              <p>Hima Teknologi Komputer</p>
+            </div>
+            <div class="timeline-pendaftaran">
+              <h3>Timeline Pendaftaran</h3>
+              <p>17 Januari - 29 April 2024</p>
+            </div>
+            <div class="link-pendaftaran">
+              <h3>Link Pendaftaran</h3>
+              <p>bit.ly/DaftarWorkshop</p>
+            </div>
+            <div class="petunjuk">
+              <h3>Juknis Kegiatan</h3>
+              <p>bit.ly/JuknisWorkshop</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
+</body>
+</html>
